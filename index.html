@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="styleSheet" href="styleSheet.css">
+
+</head>
+
+
+<header>
+    <div class="flexContainerHeader">
+        <h1 class="title">Text shaper</h1>
+        <p id="consoleLog"></p>
+    </div>
+
+</header>
+
+<main>
+    <!-- Test text display -->
+    <div class="textDisplayContainer">
+        <div class="textDisplayBox">
+            <p class="displayText" id="displayTextID"></p>
+        </div>
+
+    </div>
+
+    <!-- Test text input -->
+    <div class="testTextInputContainer">
+        <input type="text" id="displayTextInput" placeholder="Type your text here!">
+    </div>
+
+    <!-- GridBox -->
+    <div class="flexGridContainer">
+        <div class="flexGridBox">
+            <!-- SIZE -->
+            <div class="exampleText">
+                <p>Size</p>
+            </div>
+            <div class="exampleTextCommands">
+                <button class="button" id="decreaseSizeButton">Size -</button>
+                <button class="button" id="increaseSizeButton">Size +</button>
+                <input type="text" id="fontSizeInput" placeholder="Font size">
+            </div>
+            <!-- WEIGHT -->
+            <div class="exampleText">
+                <p>Weight</p>
+            </div>
+            <div class="exampleTextCommands">
+                <select id="fontWeights">
+                    <option>100</option>
+                    <option>200</option>
+                    <option>300</option>
+                    <option selected>400</option>
+                    <option>500</option>
+                    <option>600</option>
+                    <option>700</option>
+                    <option>800</option>
+                    <option>900</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="flexGridBox">
+            <div class="exampleText">
+                <p>Font type</p>
+            </div>
+            <div class="exampleTextCommands">
+                <select id="fontTypes">
+                    <option selected>Times New Roman</option>
+                    <option>Georgia</option>
+                    <option>Palatino Linotype</option>
+                    <option>Book Antiqua</option>
+                    <option>Arial</option>
+                    <option>Helvetica</option>
+                    <option>Arial Black</option>
+                    <option>Impact</option>
+                    <option>Lucida Sans Unicode</option>
+                    <option>Tahoma</option>
+                    <option>Verdana</option>
+                    <option>Courier New</option>
+                    <option>Lucida Console</option>
+                </select>
+            </div>
+        </div>
+        <div class="flexGridBox">
+            <div class="exampleText">
+                <p>Color</p>
+            </div>
+            <div class="paletteBoxContainer">
+                <div class="paletteBox">
+                    <div class="colorCircle" style="background-color: #000000;"></div>
+                    <div class="colorCircle" style="background-color: #434343;"></div>
+                    <div class="colorCircle" style="background-color: #666666;"></div>
+                    <div class="colorCircle" style="background-color: #999999;"></div>
+                    <div class="colorCircle" style="background-color: #B7B7B7;"></div>
+                    <div class="colorCircle" style="background-color: #CCCCCC;"></div>
+                    <div class="colorCircle" style="background-color: #D9D9D9;"></div>
+                    <div class="colorCircle" style="background-color: #EFEFEF;"></div>
+                    <div class="colorCircle" style="background-color: #F3F3F3;"></div>
+                    <div class="colorCircle" style="background-color: #FFFFFF;"></div>
+                    <div class="colorCircle" style="background-color: #8B1A10;"></div>
+                    <div class="colorCircle" style="background-color: #EA3323;"></div>
+                    <div class="colorCircle" style="background-color: #F19E39;"></div>
+                    <div class="colorCircle" style="background-color: #FFFF55;"></div>
+                    <div class="colorCircle" style="background-color: #75FB4C;"></div>
+                    <div class="colorCircle" style="background-color: #75FBFD;"></div>
+                    <div class="colorCircle" style="background-color: #5985E1;"></div>
+                    <div class="colorCircle" style="background-color: #0000F5;"></div>
+                    <div class="colorCircle" style="background-color: #8C1AF6;"></div>
+                    <div class="colorCircle" style="background-color: #EA33F7;"></div>
+                    <div class="colorCircle" style="background-color: #DFBAB1;"></div>
+                    <div class="colorCircle" style="background-color: #EECECD;"></div>
+                    <div class="colorCircle" style="background-color: #F8E6D0;"></div>
+                    <div class="colorCircle" style="background-color: #FDF3D0;"></div>
+                    <div class="colorCircle" style="background-color: #DCEAD5;"></div>
+                    <div class="colorCircle" style="background-color: #D3E0E3;"></div>
+                    <div class="colorCircle" style="background-color: #CCDAF5;"></div>
+                    <div class="colorCircle" style="background-color: #D3E2F1;"></div>
+                    <div class="colorCircle" style="background-color: #D8D2E7;"></div>
+                    <div class="colorCircle" style="background-color: #E6D2DC;"></div>
+                    <div class="colorCircle" style="background-color: #D08370;"></div>
+                    <div class="colorCircle" style="background-color: #DF9D9B;"></div>
+                    <div class="colorCircle" style="background-color: #F2CDA2;"></div>
+                    <div class="colorCircle" style="background-color: #FBE6A3;"></div>
+                    <div class="colorCircle" style="background-color: #BDD6AC;"></div>
+                    <div class="colorCircle" style="background-color: #A9C3C8;"></div>
+                    <div class="colorCircle" style="background-color: #AAC1F0;"></div>
+                    <div class="colorCircle" style="background-color: #A7C4E5;"></div>
+                    <div class="colorCircle" style="background-color: #B2A8D3;"></div>
+                    <div class="colorCircle" style="background-color: #CEA8BC;"></div>
+                    <div class="colorCircle" style="background-color: #BD4C31;"></div>
+                    <div class="colorCircle" style="background-color: #D16D6A;"></div>
+                    <div class="colorCircle" style="background-color: #ECB576;"></div>
+                    <div class="colorCircle" style="background-color: #F9DB78;"></div>
+                    <div class="colorCircle" style="background-color: #9DC384;"></div>
+                    <div class="colorCircle" style="background-color: #80A4AE;"></div>
+                    <div class="colorCircle" style="background-color: #789DE5;"></div>
+                    <div class="colorCircle" style="background-color: #7CA7D8;"></div>
+                    <div class="colorCircle" style="background-color: #8B7DBE;"></div>
+                    <div class="colorCircle" style="background-color: #B87E9F;"></div>
+                    <div class="colorCircle" style="background-color: #992B15;"></div>
+                    <div class="colorCircle" style="background-color: #BB271A;"></div>
+                    <div class="colorCircle" style="background-color: #DA954B;"></div>
+                    <div class="colorCircle" style="background-color: #EAC452;"></div>
+                    <div class="colorCircle" style="background-color: #78A75A;"></div>
+                    <div class="colorCircle" style="background-color: #54808C;"></div>
+                    <div class="colorCircle" style="background-color: #4B77D1;"></div>
+                    <div class="colorCircle" style="background-color: #5084C1;"></div>
+                    <div class="colorCircle" style="background-color: #634FA2;"></div>
+                    <div class="colorCircle" style="background-color: #9B5278;"></div>
+                    <div class="colorCircle" style="background-color: #7A2917;"></div>
+                    <div class="colorCircle" style="background-color: #8C1A10;"></div>
+                    <div class="colorCircle" style="background-color: #A96424;"></div>
+                    <div class="colorCircle" style="background-color: #B89230;"></div>
+                    <div class="colorCircle" style="background-color: #48752C;"></div>
+                    <div class="colorCircle" style="background-color: #264E5B;"></div>
+                    <div class="colorCircle" style="background-color: #2854C5;"></div>
+                    <div class="colorCircle" style="background-color: #255290;"></div>
+                    <div class="colorCircle" style="background-color: #321D71;"></div>
+                    <div class="colorCircle" style="background-color: #6B2346;"></div>
+                    <div class="colorCircle" style="background-color: #531607;"></div>
+                    <div class="colorCircle" style="background-color: #5D0E07;"></div>
+                    <div class="colorCircle" style="background-color: #714216;"></div>
+                    <div class="colorCircle" style="background-color: #7A611D;"></div>
+                    <div class="colorCircle" style="background-color: #314D1C;"></div>
+                    <div class="colorCircle" style="background-color: #18333C;"></div>
+                    <div class="colorCircle" style="background-color: #274483;"></div>
+                    <div class="colorCircle" style="background-color: #173660;"></div>
+                    <div class="colorCircle" style="background-color: #1E124A;"></div>
+                    <div class="colorCircle" style="background-color: #46152F;"></div>
+                </div>
+            </div>
+        </div>
+        <script src="Program.js"></script>
+</main>
+
+<footer>
+
+</footer>
